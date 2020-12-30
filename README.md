@@ -15,7 +15,8 @@ mqtt-sony-bravia can be configured using environment variables:
 A Docker image for the **armhf** architecture (Raspberry Pi et al.) is available on [Docker Hub](https://hub.docker.com/r/randombyte/armhf-mqtt-traffic).
 
 ## Example
-#### Option 1: Docker
+
+### Option 1: Docker
 ````sh
 docker run --rm -it \
 MQTT_SB_TV_IP="<IP of TV>" \
@@ -24,7 +25,7 @@ MQTT_SB_MQTT_TOPIC_PREFIX="Home/TV/" \
 randombyte/armhf-sony-bravia:latest
 ````
 
-#### Option 2: Source
+### Option 2: Source
 ````sh
 MQTT_SB_TV_IP="<IP of TV>" \
 MQTT_SB_MQTT_BROKER="<broker HOST or IP>" \
@@ -32,7 +33,7 @@ MQTT_SB_MQTT_TOPIC_PREFIX="Home/TV/" \
 python3 src/main.py
 ````
 
-#### MQTT Messages Example
+### MQTT Message Examples
 
 | Topic        | Payload
 | ------------- |-------------|
