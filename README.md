@@ -9,7 +9,7 @@ mqtt-sony-bravia can be configured using environment variables:
 
 - **MQTT_SB_TV_IP:** IP of your Sony Bravia TV in your network
 - **MQTT_SB_MQTT_BROKER:** IP or hostname of your MQTT broker
-- **MQTT_SB_MQTT_TOPIC_PREFIX:** MQTT topic prefix to publish TV status information on, e.g. `Home/TV/`
+- **MQTT_SB_MQTT_TOPIC_PREFIX:** MQTT topic prefix to publish TV status information on, e.g. `Home/TV/` (must end with a slash)
 
 ## Docker Image
 A Docker image for the **armhf** architecture (Raspberry Pi et al.) is available on [Docker Hub](https://hub.docker.com/r/randombyte/armhf-mqtt-traffic).
