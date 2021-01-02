@@ -7,7 +7,7 @@ tvIp = os.environ["MQTT_SB_TV_IP"]
 mqttBrokerIp = os.environ["MQTT_SB_MQTT_BROKER"]
 mqttTopicPrefix = os.environ["MQTT_SB_MQTT_TOPIC_PREFIX"]
 
-pollInterval = 60; # every 1 minute
+pollInterval = 10; # every 10 seconds
 payload = {"id": 20, "method": "getCurrentExternalInputsStatus", "version": "1.0", "params": [""]}
 
 mqttClient = mqtt.Client(client_id="mqtt-sony-bravia")
