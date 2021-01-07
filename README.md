@@ -1,6 +1,6 @@
 # mqtt-sony-bravia
 
-[![Docker Hub Pulls](https://img.shields.io/docker/pulls/randombyte/armhf-mqtt-sony-bravia.svg)](https://hub.docker.com/r/randombyte/armhf-mqtt-sony-bravia)
+[![Docker Hub Pulls](https://img.shields.io/docker/pulls/randombyte/mqtt-sony-bravia.svg)](https://hub.docker.com/r/randombyte/mqtt-sony-bravia)
 
 Poll the [HTTP endpoint](https://gist.github.com/kalleth/e10e8f3b8b7cb1bac21463b0073a65fb) of a legacy (pre-Android) Sony Bravia TVs for various information and publish those via MQTT
 
@@ -12,7 +12,7 @@ mqtt-sony-bravia can be configured using environment variables:
 - **MQTT_SB_MQTT_TOPIC_PREFIX:** MQTT topic prefix to publish TV status information on, e.g. `Home/TV/` (must end with a slash)
 
 ## Docker Image
-A Docker image for the **armhf** architecture (Raspberry Pi et al.) is available on [Docker Hub](https://hub.docker.com/r/randombyte/armhf-mqtt-traffic).
+A Docker image is available on [Docker Hub](https://hub.docker.com/r/randombyte/mqtt-traffic).
 
 ## Example
 
@@ -22,7 +22,7 @@ docker run --rm -it \
 MQTT_SB_TV_IP="<IP of TV>" \
 MQTT_SB_MQTT_BROKER="<broker HOST or IP>" \
 MQTT_SB_MQTT_TOPIC_PREFIX="Home/TV/" \
-randombyte/armhf-sony-bravia:latest
+randombyte/mqtt-sony-bravia:latest
 ````
 
 ### Option 2: Source
